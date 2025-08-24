@@ -38,6 +38,6 @@ module "cntr" {
 }
 module "cntr" {
   source         = "../childmodule/CNTR"
-  container_name = "containerB"
+  container_name = "containerA"
   storage_account_id = module.stg_name.id
 }
