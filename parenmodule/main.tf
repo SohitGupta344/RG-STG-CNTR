@@ -31,13 +31,3 @@ module "cntr" {
   storage_account_id = module.stg_name.id
 }
 
-module "cntr" {
-  source         = "../childmodule/CNTR"
-  container_name = "container2"
-  storage_account_id = module.stg_name.id
-}
-module "cntr" {
-  source         = "../childmodule/CNTR"
-  container_name = "containerA"
-  storage_account_id = module.stg_name.id
-}
