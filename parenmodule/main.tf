@@ -30,3 +30,9 @@ module "cntr" {
   container_name = "container1"
   storage_account_id = module.stg_name.id
 }
+module "stg_name" {
+  source    = "../childmodule"
+  stg_name  = "stgpractice2"
+  rg_name   = module.RG.rg_name     
+  location  = module.RG.location
+}
